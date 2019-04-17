@@ -1,0 +1,58 @@
+.heading-3 {
+    text-align: left;
+    padding-left: 10px;
+    margin-top: 20px;
+}
+
+.button-add {
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font: inherit;
+    font-weight: bold;
+    text-align: right;
+    transform: translate(600px, -40px);
+    margin-bottom: -20px;
+}
+
+@media (min-width: 300px) {
+    .button-add {
+        transform: translate(180px, -40px);
+    }
+}
+
+@media (min-width: 500px) {
+    .button-add {
+        transform: translate(200px, -40px);
+    }
+}
+
+@media (min-width: 640px) {
+    .button-add {
+        transform: translate(300px, -40px);
+    }
+}
+
+@media (min-width: 840px) {
+    .button-add {
+        transform: translate(400px, -40px);
+    }
+}
+
+@media (min-width: 1024px) {
+    .button-add {
+        transform: translate(460px, -40px);
+    }
+}
+
+@media (min-width: 1100px) {
+    .button-add {
+        transform: translate(480px, -40px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .button-add {
+        transform: translate(650px, -40px);
+    }
+}

@@ -1,0 +1,26 @@
+.navigation {
+  font-size: 15px;
+  text-align: left;
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+.navigation a {
+  color: #8f5c2c;
+  text-decoration: none;
+  box-sizing: border-box;
+  padding: 0 20px;
+  float: left;
+  text-align: center;
+}
+
+.navigation:hover,
+.navigation:active,
+.navigation a.active {
+  color: #ccc;
+}

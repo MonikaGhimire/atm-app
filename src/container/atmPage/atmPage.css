@@ -1,0 +1,14 @@
+.atmForm {
+    margin: 20px 10px 10px 10px;
+    padding: 15px;
+    
+}
+
+.doneButton {
+    text-align: center;
+}
+
+.accountNumberError {
+    color: red;
+    font-size: 15px;
+}

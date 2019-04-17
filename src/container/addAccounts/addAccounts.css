@@ -1,0 +1,19 @@
+
+.AddForm {
+    width: 70%;
+    margin-left: 150px;
+    margin-right: 40px;
+    padding: 10px;
+}
+
+.AddForm input {
+    padding: 10px;
+    margin: 20px;
+}
+
+.Errors {
+    color: red;
+    font-size: 15px;
+   text-align: left;
+   line-height: 2px;
+}

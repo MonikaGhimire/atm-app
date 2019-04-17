@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
-
+import Navigation from './components/navigation/navigation';
+import { Switch, Route } from 'react-router-dom';
+import AdminPage from './container/adminPage/AdminPage';
+import AtmPage from './container/atmPage/AtmPage';
+import AddAccounts from './container/addAccounts/AddAccounts';
+import Notification from './components/Notification/Notification';
+import AtmDetails from './container/atmPage/DetailsContainer';
 class App extends Component {
   render() {
+    let routes = (
+      <Switch>
+        <Route path='/add-new-account' component={AddAccounts} />
+        <Route path='/atm' component={AtmPage} />
+        <Route exact path='/' component={AdminPage} />
+        <Route path='/atm-details/:accountNumber' component={AtmDetails} />
+      </Switch>
+    );
+
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
+          <h2>ATM APP</h2>
         </header>
+        <Navigation />
+        <Notification />
+        {routes}
       </div>
     );
   }

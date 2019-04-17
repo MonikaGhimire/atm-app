@@ -1,0 +1,12 @@
+.DetailsButtons {
+    text-align: center;
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    margin: 20px;
+    font-weight: bold;
+}
+
+.balanceError {
+    color: red;
+}
