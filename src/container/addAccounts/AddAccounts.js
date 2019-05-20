@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './addAccounts.css';
 import { connect } from 'react-redux';
-import * as actions from '../../Actions/main';
+import * as actions from '../../actions/main';
 
 class AddAccounts extends Component {
     state = {
