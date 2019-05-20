@@ -5,7 +5,7 @@ It is a simple atm project which has the functionalities to create account, view
 - CSS3
 - SASS
 - React.js
-- redux.js
+- Redux
 - Bootstrap
 
 ### Installation

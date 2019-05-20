@@ -46,7 +46,7 @@ class AtmDetailsContainer extends Component {
             return false;
         }
 
-        if(isNaN(this.state.balance)) {
+        if (isNaN(this.state.balance)) {
             this.setState({
                 balanceError: 'Please enter valid amount!'
             })
@@ -124,13 +124,13 @@ class AtmDetailsContainer extends Component {
                         </tr>
                     </thead>
                     <tbody>
-                        {foundAccounts[0].transactions.length > 0 ? foundAccounts[0].transactions.map( (transaction, index) => (
+                        {foundAccounts[0].transactions.length > 0 ? foundAccounts[0].transactions.map((transaction, index) => (
                             <tr key={index}>
-                            <td>{transaction.date}</td>
-                            <td>{transaction.balance}</td>
-                            <td>{transaction.ownerName} Atm</td>
-                            <td>{transaction.totalBalance}</td>
-                        </tr>
+                                <td>{transaction.date}</td>
+                                <td>{transaction.balance}</td>
+                                <td>{transaction.ownerName} Atm</td>
+                                <td>{transaction.totalBalance}</td>
+                            </tr>
                         )) : null}
                     </tbody>
                 </table>

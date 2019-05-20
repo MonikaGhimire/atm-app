@@ -35,8 +35,8 @@ const addAccount = (state, action) => {
 
 const withdrawBalance = (state, action) => {
     let newAccounts = [...state.accounts];
-  let foundAccount = newAccounts.filter(account => account.accountNumber == action.accountNumber);
-  foundAccount[0].totalBalance = action.totalBalance;
+    let foundAccount = newAccounts.filter(account => account.accountNumber == action.accountNumber);
+    foundAccount[0].totalBalance = action.totalBalance;
     return updateObject(state, {
         accounts: newAccounts,
         display: false
@@ -45,8 +45,8 @@ const withdrawBalance = (state, action) => {
 
 const viewTransactions = (state, action) => {
     let updatedAccounts = [...state.accounts];
-   let accountFound = updatedAccounts.filter(account => account.accountNumber == action.accountNumber);
-   accountFound[0].transactions.push(action.transaction);
+    let accountFound = updatedAccounts.filter(account => account.accountNumber == action.accountNumber);
+    accountFound[0].transactions.push(action.transaction);
     return updateObject(state, {
         accounts: updatedAccounts,
         display: false

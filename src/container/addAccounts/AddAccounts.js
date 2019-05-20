@@ -24,7 +24,7 @@ class AddAccounts extends Component {
                     errors.accountNumberError = 'Account number is required!';
                     this.setState({ errors: errors });
                     isFieldValid = false;
-                } else if(isNaN(value)) {
+                } else if (isNaN(value)) {
                     errors.accountNumberError = 'Account number is invalid!';
                     this.setState({ errors: errors });
                     isFieldValid = false;
@@ -56,11 +56,11 @@ class AddAccounts extends Component {
                     errors.cardNumberError = 'Card number is required!';
                     this.setState({ errors: errors });
                     isFieldValid = false;
-                } else if(isNaN(value)) {
+                } else if (isNaN(value)) {
                     errors.cardNumberError = 'Card number is invalid!';
                     this.setState({ errors: errors });
                     isFieldValid = false;
-                } 
+                }
                 else {
                     errors.cardNumberError = null;
                     this.setState({ errors: errors });
@@ -74,7 +74,7 @@ class AddAccounts extends Component {
                     errors.pinNumberError = 'Pin number is required!';
                     this.setState({ errors: errors });
                     isFieldValid = false;
-                } else if(isNaN(value)) {
+                } else if (isNaN(value)) {
                     errors.pinNumberError = 'Pin number is invalid!';
                     this.setState({ errors: errors });
                     isFieldValid = false;
@@ -92,7 +92,7 @@ class AddAccounts extends Component {
                     errors.balanceError = 'Total balance is required!';
                     this.setState({ errors: errors });
                     isFieldValid = false;
-                } else if(isNaN(value)) {
+                } else if (isNaN(value)) {
                     errors.balanceError = 'Please enter valid amount!';
                     this.setState({ errors: errors });
                     isFieldValid = false;

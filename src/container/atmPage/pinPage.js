@@ -3,12 +3,12 @@ import { connect } from 'react-redux';
 import { NavLink } from 'react-router-dom';
 
 class PinComponent extends Component {
-    state = { 
+    state = {
         pinNumber: null,
         pinNumberError: null
-     };
+    };
 
-     validatePinNumberInput = () => {
+    validatePinNumberInput = () => {
         let realPinNumber = this.props.accounts.map(account => account.pinNumber);
         console.log(realPinNumber[0]);
         if (this.state.pinNumber === '' || this.state.pinNumber === undefined || this.state.pinNumber === null) {
@@ -44,19 +44,19 @@ class PinComponent extends Component {
         }
     }
 
-    render() { 
-        return ( 
+    render() {
+        return (
             <form className="atmForm">
                 <div className="form-group row">
                     <label htmlFor="colFormLabelSm" className="col-form-label col-form-label-sm">Pin Number:</label>
                     <div className="col-sm-8">
-                    <input type="password" onChange={this.handleChange} className="form-control form-control-sm" id="pinNumber" name="pinNumber" placeholder=" Enter your pin number" />
+                        <input type="password" onChange={this.handleChange} className="form-control form-control-sm" id="pinNumber" name="pinNumber" placeholder=" Enter your pin number" />
                         {this.state.pinNumberError ? <label className="accountNumberError" id="pinNumber">{this.state.pinNumberError}</label> : null}
                     </div>
                 </div>
-               <NavLink to='/atm-details'><button type="button" className="btn btn-primary doneButton" onClick={this.isPinNumberValid}>Done</button></NavLink> 
+                <NavLink to='/atm-details'><button type="button" className="btn btn-primary doneButton" onClick={this.isPinNumberValid}>Done</button></NavLink>
             </form>
-         );
+        );
     }
 }
 
@@ -65,5 +65,5 @@ const mapStateToProps = state => {
         accounts: state.accounts
     }
 }
- 
+
 export default connect(mapStateToProps)(PinComponent);

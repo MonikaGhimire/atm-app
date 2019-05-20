@@ -16,7 +16,6 @@ class AtmPage extends Component {
     }
 
     validateAccountNumberInput = () => {
-        //let realAccountNumber = this.props.accounts.map(account => account.accountNumber); this code is to get array of accountNumber only from accounts array
         if (this.state.accountNumber === '' || this.state.accountNumber === undefined || this.state.accountNumber === null) {
             this.setState({
                 accountNumberError: 'Account Number is required!'
@@ -118,8 +117,6 @@ class AtmPage extends Component {
 
         return (
             <div>
-                {/* {atmForm}
-                { this.renderPinComponent()} */}
                 {!this.state.showPinComponent ? atmForm : this.renderPinComponent()}
             </div>
         );
